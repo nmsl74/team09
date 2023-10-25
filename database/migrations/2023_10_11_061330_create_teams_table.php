@@ -14,11 +14,11 @@ class CreateTeamsTable extends Migration
     public function up()
     {
         Schema::create('teams', function (Blueprint $table) {
-            $table->id();
+            $table->id()->comment('編號(主鍵)');
             $table->string('name')->comment('球隊');
             $table->string('zone')->comment('地區');
             $table->string('city')->comment('國家');
-            $table->string('home')->comment('創立時間');
+            $table->date('home')->comment('創立時間');
             $table->timestamps();
         });
     }
