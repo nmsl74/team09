@@ -21,6 +21,8 @@ class CreateTeamsTable extends Migration
             $table->date('home')->comment('創立時間');
             $table->timestamps();
         });
+
+        
     }
 
     /**

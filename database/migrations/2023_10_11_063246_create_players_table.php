@@ -14,8 +14,9 @@ class CreatePlayersTable extends Migration
     public function up()
     {
         Schema::create('players', function (Blueprint $table) {
-            $table->id()->comment('編號(主鍵)');
+           
             $table->string('player')->comment('玩家');
+            $table->srting('tid')->comment('球員編號(外部鍵)');
             $table->string('character_position')->comment('角色位置');
             $table->string('mouse')->comment('滑鼠');
             $table->string('dpi')->comment('dpi');

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\controlles\PlayersController;
+use App\\Http\controlles\TeamsController;
 
 /*
 |--------------------------------------------------------------------------
